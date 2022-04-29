@@ -17,13 +17,13 @@ SELECT * FROM `courses` WHERE `period` = 'I Semestre' AND `year` = 1;
 SELECT * FROM `exams` WHERE `date` = '2020-06-20' AND HOUR(`hour`) >= 14;
 
 // 6.
-SELECT * FROM `degrees` WHERE `name` LIKE '%magistrale%';
+SELECT * FROM `degrees` WHERE `level` = 'magistrale';
 
 // 7.
 SELECT COUNT(*) AS `department_n` FROM `departments`;
 
 // 8.
-SELECT * FROM `teachers` WHERE `phone` IS NULL
+SELECT COUNT(*) as `n` FROM `teachers` WHERE `phone` IS NULL
 ```
 
 # Ex con Group By
